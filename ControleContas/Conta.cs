@@ -19,6 +19,20 @@ namespace ControleContas
             _numero = new Random().Next(1000000000,999999999);
 
         }
+        public decimal _saldo;
+
+        public decimal Saldo
+        {
+            get
+            {
+                return _saldo;
+            }
+            private set
+            {
+                _saldo = value;
+            }
+
+        }
 
         private long _numero;
         public long Numero
